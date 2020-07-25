@@ -1,0 +1,129 @@
+﻿@page
+@model CLEart.DetailsModel
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Details</h1>
+        </div>
+        @{
+            Art art = new Art();
+
+            string artworkID = Request.Query["artworkID"].ToString();
+
+            //var query = from works in art.artworks.listOfArt
+            //            where works.id == artworkID
+            //            select works;
+
+            var query = from works in art.artworks.listOfArt
+                        where works.id == artworkID
+                        select new Artwork
+                        {
+                            Accession_number = works.Accession_number,
+                            Title = works.Title,
+                            id = works.id,
+                            creators = works.creators,
+                            departments = works.departments,
+                            Tombstone = works.Tombstone
+                        };
+
+            foreach (var item in query)
+            {
+                ViewData["imageFile"] = @"images/" + item.Accession_number + "_reduced.jpg";
+
+                <div class="col-3">
+                    <a href="Enhance?artworkID=@item.id">
+                        <img class="img-fluid" src="@ViewData["imageFile"]" />
+                    </a>
+                    <p>
+                        <i>
+                            *Click to enlarge
+                        </i>
+                    </p>
+                </div>
+                <div class="col-9 row">
+                    <div class="col-2">
+                        <b>Title</b>
+                    </div>
+                    <div class="col-10">
+                        @item.Title
+                    </div>
+
+                    <div class="col-2">
+                        <b>Description</b>
+                    </div>
+                    <div class="col-10">
+                        @item.Tombstone
+                    </div>
+
+                    <div class="col-2">
+                        <b>ID</b>
+                    </div>
+                    <div class="col-10">
+                        @item.id
+                    </div>
+
+                    <div class="col-2">
+                        <b>Accession Number</b>
+                    </div>
+                    <div class="col-10">
+                        @item.Accession_number
+                    </div>
+                </div>
+
+                foreach (var creator in item.creators)
+                {
+                    <div class="col-12" style="padding-top: 20px">
+                        <h4>Creator</h4>
+                    </div>
+
+                    <div class="col-2">
+                        <b>Creator Name</b>
+                    </div>
+                    <div class="col-10">
+                        @creator.description
+                    </div>
+
+                    <div class="col-2">
+                        <b>Creator Role</b>
+                    </div>
+                    <div class="col-10">
+                        @creator.role
+                    </div>
+
+                    <div class="col-2">
+                        <b>Creator ID</b>
+                    </div>
+                    <div class="col-10">
+                        @creator.id
+                    </div>
+                }
+
+                foreach (var department in item.departments)
+                {
+                    <div class="col-12" style="padding-top: 20px">
+                        <h4>Department</h4>
+                    </div>
+
+                    <div class="col-2">
+                        <b>Department Name</b>
+                    </div>
+                    <div class="col-10">
+                        @department.name
+                    </div>
+
+                    <div class="col-2">
+                        <b>Department ID</b>
+                    </div>
+                    <div class="col-10">
+                        @department.id
+                    </div>
+                }
+            }
+        }
+    </div>
+</div>

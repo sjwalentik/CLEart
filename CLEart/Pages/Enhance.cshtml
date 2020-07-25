@@ -1,0 +1,37 @@
+﻿@page
+@model CLEart.EnhanceModel
+@{
+    ViewData["Title"] = "Enhance";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            @{
+                Art art = new Art();
+
+                string artworkID = Request.Query["artworkID"].ToString();
+
+                var query = from works in art.artworks.listOfArt
+                            where works.id == artworkID
+                            select new Artwork
+                            {
+                                Accession_number = works.Accession_number,
+                                Title = works.Title,
+                                id = works.id,
+                                creators = works.creators,
+                                departments = works.departments,
+                                Tombstone = works.Tombstone
+                            };
+
+                foreach (var item in query)
+                {
+                    ViewData["imageFile"] = @"images/" + item.Accession_number + "_reduced.jpg";
+                    <img style="width: 100%;" src="@ViewData["imageFile"]" />
+                }
+            }
+        </div>
+    </div>
+</div>
+

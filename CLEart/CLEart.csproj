@@ -1,0 +1,116 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\1914.726_reduced.jpg" />
+    <None Include="wwwroot\images\1915.79.1_reduced.jpg" />
+    <None Include="wwwroot\images\1915.79.2_reduced.jpg" />
+    <None Include="wwwroot\images\1915.79.3_reduced.jpg" />
+    <None Include="wwwroot\images\1915.79.4_reduced.jpg" />
+    <None Include="wwwroot\images\1915.79.5_reduced.jpg" />
+    <None Include="wwwroot\images\1915.79.6_reduced.jpg" />
+    <None Include="wwwroot\images\1915.79.7_reduced.jpg" />
+    <None Include="wwwroot\images\1915.79.8_reduced.jpg" />
+    <None Include="wwwroot\images\1915.79_reduced.jpg" />
+    <None Include="wwwroot\images\1916.796_reduced.jpg" />
+    <None Include="wwwroot\images\1916.965_reduced.jpg" />
+    <None Include="wwwroot\images\1916.966_reduced.jpg" />
+    <None Include="wwwroot\images\1918.356_reduced.jpg" />
+    <None Include="wwwroot\images\1921.1699_reduced.jpg" />
+    <None Include="wwwroot\images\1928.35_reduced.jpg" />
+    <None Include="wwwroot\images\1931.439_reduced.jpg" />
+    <None Include="wwwroot\images\1937.804_reduced.jpg" />
+    <None Include="wwwroot\images\1937.926_reduced.jpg" />
+    <None Include="wwwroot\images\1942.636_reduced.jpg" />
+    <None Include="wwwroot\images\1944.237_reduced.jpg" />
+    <None Include="wwwroot\images\1945.24_reduced.jpg" />
+    <None Include="wwwroot\images\1947.106_reduced.jpg" />
+    <None Include="wwwroot\images\1949.185_reduced.jpg" />
+    <None Include="wwwroot\images\1950.91_reduced.jpg" />
+    <None Include="wwwroot\images\1952.592_reduced.jpg" />
+    <None Include="wwwroot\images\1954.13.9_reduced.jpg" />
+    <None Include="wwwroot\images\1957.40_reduced.jpg" />
+    <None Include="wwwroot\images\1958.174_reduced.jpg" />
+    <None Include="wwwroot\images\1961.205_reduced.jpg" />
+    <None Include="wwwroot\images\1961.87_reduced.jpg" />
+    <None Include="wwwroot\images\1963.673_reduced.jpg" />
+    <None Include="wwwroot\images\1964.2_reduced.jpg" />
+    <None Include="wwwroot\images\1965.233_reduced.jpg" />
+    <None Include="wwwroot\images\1965.427_reduced.jpg" />
+    <None Include="wwwroot\images\1966.435_reduced.jpg" />
+    <None Include="wwwroot\images\1966.455_reduced.jpg" />
+    <None Include="wwwroot\images\1966.458.1_reduced.jpg" />
+    <None Include="wwwroot\images\1966.458.2_reduced.jpg" />
+    <None Include="wwwroot\images\1966.474_reduced.jpg" />
+    <None Include="wwwroot\images\1966.479_reduced.jpg" />
+    <None Include="wwwroot\images\1966.482_reduced.jpg" />
+    <None Include="wwwroot\images\1968.64.2_reduced.jpg" />
+    <None Include="wwwroot\images\1969.31_reduced.jpg" />
+    <None Include="wwwroot\images\1970.160_reduced.jpg" />
+    <None Include="wwwroot\images\1971.141_reduced.jpg" />
+    <None Include="wwwroot\images\1971.301_reduced.jpg" />
+    <None Include="wwwroot\images\1972.188_reduced.jpg" />
+    <None Include="wwwroot\images\1973.184_reduced.jpg" />
+    <None Include="wwwroot\images\1974.26_reduced.jpg" />
+    <None Include="wwwroot\images\1974.36_reduced.jpg" />
+    <None Include="wwwroot\images\1976.97_reduced.jpg" />
+    <None Include="wwwroot\images\1977.116_reduced.jpg" />
+    <None Include="wwwroot\images\1978.43_reduced.jpg" />
+    <None Include="wwwroot\images\1980.231_reduced.jpg" />
+    <None Include="wwwroot\images\1980.258_reduced.jpg" />
+    <None Include="wwwroot\images\1980.74_reduced.jpg" />
+    <None Include="wwwroot\images\1985.272_reduced.jpg" />
+    <None Include="wwwroot\images\1985.57_reduced.jpg" />
+    <None Include="wwwroot\images\1987.140_reduced.jpg" />
+    <None Include="wwwroot\images\1988.18_reduced.jpg" />
+    <None Include="wwwroot\images\1988.19_reduced.jpg" />
+    <None Include="wwwroot\images\1991.45_reduced.jpg" />
+    <None Include="wwwroot\images\1991.46_reduced.jpg" />
+    <None Include="wwwroot\images\1992.235_reduced.jpg" />
+    <None Include="wwwroot\images\1996.233_reduced.jpg" />
+    <None Include="wwwroot\images\1997.246_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.10_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.11_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.12_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.13_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.14_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.15_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.16_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.17_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.18_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.1_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.2_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.3_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.4_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.5_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.6_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.7_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.8_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78.9_reduced.jpg" />
+    <None Include="wwwroot\images\1998.78_reduced.jpg" />
+    <None Include="wwwroot\images\2004.18_reduced.jpg" />
+    <None Include="wwwroot\images\2005.144_reduced.jpg" />
+    <None Include="wwwroot\images\2008.152_reduced.jpg" />
+    <None Include="wwwroot\images\2010.426_reduced.jpg" />
+    <None Include="wwwroot\images\2011.329_reduced.jpg" />
+    <None Include="wwwroot\images\2011.502_reduced.jpg" />
+    <None Include="wwwroot\images\2013.315_reduced.jpg" />
+    <None Include="wwwroot\images\2015.104_reduced.jpg" />
+    <None Include="wwwroot\images\2015.463_reduced.jpg" />
+    <None Include="wwwroot\images\2015.584_reduced.jpg" />
+    <None Include="wwwroot\images\2015.6_reduced.jpg" />
+    <None Include="wwwroot\images\2016.56_reduced.jpg" />
+    <None Include="wwwroot\images\2016.9_reduced.jpg" />
+    <None Include="wwwroot\images\2017.113_reduced.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+  </ItemGroup>
+
+
+
+</Project>

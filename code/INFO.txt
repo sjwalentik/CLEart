@@ -1,0 +1,27 @@
+TABLE NAMES
+
+artwork
+artwork__creator
+artwork__department
+creator
+department
+
+
+[0:'id', 1:'accession_number', 2:'title', 3:'tombstone', 4:'artwork_id', 5:'creator_id', 6:'id']
+
+
+
+Artwork
+['id', 'accession_number', 'title', 'tombstone']
+
+Artwork creators
+['artwork_id', 'creator_id']
+
+Artwork departments
+['artwork_id', 'department_id']
+
+Departments
+['id', 'name']
+
+Creators
+['id', 'role', 'description']

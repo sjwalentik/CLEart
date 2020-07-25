@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="display-4">Gallery</h1>
+        </div>
+    </div>
+    <div class="card-columns">
+        @{
+            Art art = new Art();
+
+            foreach (var item in art.artworks.listOfArt)
+            {
+                ViewData["imageFile"] = @"images/" + item.Accession_number + "_reduced.jpg";
+
+
+                <div class="card w-100">
+                    <a href="Details?artworkID=@item.id">
+                        <img class="card-img-top" src="@ViewData["imageFile"]" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Title</h5>
+                        <a href="Details?artworkID=@item.id" class="btn btn-primary">More Details</a>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

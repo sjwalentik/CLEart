@@ -1,0 +1,50 @@
+﻿@page
+@model CLEart.SearchModel
+@{
+    ViewData["Title"] = "Search";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row" style="padding-bottom: 50px;">
+        <div class="col-12">
+            <h1>Search</h1>
+
+            <form method="post">
+                <input type="text" name="searchString" value="" required />
+                <input type="submit" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="card-columns">
+        @{
+            Art art = new Art();
+
+            String txtKeyword = (ViewData["searchString"] ?? "").ToString();
+
+            var query1 = from works in art.artworks.listOfArt
+                         where works.Title.Contains(txtKeyword) || works.Tombstone.Contains(txtKeyword) || works.id.Contains(txtKeyword) || works.Accession_number.Contains(txtKeyword)
+                         select works;
+
+            foreach (var item in query1)
+            {
+                ViewData["imageFile"] = @"images/" + item.Accession_number + "_reduced.jpg";
+
+                <div class="card w-100">
+                    <a href="Details?artworkID=@item.id">
+                        <img class="card-img-top" src="@ViewData["imageFile"]" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Title</h5>
+                        <a href="Details?artworkID=@item.id" class="btn btn-primary">More Details</a>
+                    </div>
+                </div>
+            }
+        }
+
+    </div>
+</div>
+
+
