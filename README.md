@@ -14,3 +14,7 @@ The dbReader.py file can be found in the code file directory once editing the 2 
 
 After running part 1 the data file should be updated in the project directory and ready to be used. Clicking and opening the solution into Visual Studios and running the project with IIS Express will bring up the web app.
 
+Files that I worked heavily in
+CLEart/Artwork.cs
+CLEart/Pages/**Anything in here**
+code/**anything in here**
